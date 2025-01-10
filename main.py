@@ -1,1 +1,0 @@
-print("jai jinendra");
