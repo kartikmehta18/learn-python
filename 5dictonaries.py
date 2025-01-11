@@ -1,6 +1,3 @@
-from sys import stdout
-
-from altair import value
 
 
 student = {'name': 'john' , 'age':25 ,"course": ['maths', "ds"]}
