@@ -1,4 +1,4 @@
-from numpy import concat
+
 
 
 print("jai jinendra");
@@ -16,7 +16,7 @@ print(a[:5])
 print(a[5:])
 
 
-# lowercase
+# lowercaseje  
 print(a.lower())
 
 # uppercase
@@ -44,4 +44,4 @@ print(message)
 #dri
 print(dir(c))
 
-# print(help(str))
+# print(help(str)) 
