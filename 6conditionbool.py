@@ -24,8 +24,9 @@ if user == 'Admin' and login:
 else:
     print("bad creds")
     
-a =[1,2,3]
+a =[1,2,3] 
+
 b =[1,2,3]
 print(a==b) # true
 print(a is b) # false
-print(id(a) ) # id is different of boath
+print(id(a) ) # id is different of both
