@@ -30,3 +30,4 @@ b =[1,2,3]
 print(a==b) # true
 print(a is b) # false
 print(id(a) ) # id is different of both
+print(id(b) )

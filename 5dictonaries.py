@@ -7,13 +7,13 @@ print(student.get("name"))
 student['phone']='555-55555'
 print(student.get("phone",'not found'))
 print(student)
-#updte
+# updte
 student.update({'name': 'john' , 'age':25 ,"course": ['maths', "ds"], 'phone':555-55555})
 
-#delete
+# delete
 # del student['age']
 
-#pop is to delete val
+# pop is to delete val
 pp = student.pop("age")
 
 print(student)
