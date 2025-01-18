@@ -16,4 +16,16 @@ def student(*args, **kwargs):
     print(args) #touple
     print(kwargs) # dictonary key , vaalue
 
-student('math' ,"art", name='kartik' , age =21)
+
+# student('math' ,"art", name='kartik' , age =21)
+
+def student1(*args, **kwargs):
+    print(args) #touple
+    print(kwargs) # dictonary key , vaalue
+
+
+courses =['math', 'art']
+info = {'name': 'kartik', 'age': 21}
+
+# student1(courses,info) this prints (['math', 'art'], {'name': 'kartik', 'age': 21}) we got all in touple we solve
+student1(*courses,**info) # unpact the values 
