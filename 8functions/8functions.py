@@ -6,7 +6,7 @@ def hellow_func():
 # value passing function
 
 def greet_fun(greeting , name="name"):
-    return '{}, /{}'.format(greeting , name)
+    return '{}, /{}'.format(greeting , name);
 # print(greet_fun("hi", "kartik"))    
 
 # new asvance function we pass this in function *args, **kwargs it store default inp paramater 
@@ -29,3 +29,4 @@ info = {'name': 'kartik', 'age': 21}
 
 # student1(courses,info) this prints (['math', 'art'], {'name': 'kartik', 'age': 21}) we got all in touple we solve
 student1(*courses,**info) # unpact the values 
+ 

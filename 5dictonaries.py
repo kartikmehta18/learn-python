@@ -26,6 +26,6 @@ print(student.keys()) # print key
 for key in student:
     print(key)
     
-# for method for both key and value
+# for method for both the key and value 
 for key,value in student.items():
     print(key , value)
