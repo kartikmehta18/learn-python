@@ -22,7 +22,7 @@ if user == 'Admin' and login:
 # if user == 'Admin' or login: print admin page
     print('admin page')
 else:
-    print("bad creds")
+    print("bad credits")
     
 a =[1,2,3] 
 
