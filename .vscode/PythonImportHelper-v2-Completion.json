@@ -1,0 +1,333 @@
+[
+    {
+        "label": "find_index",
+        "importPath": "my_module",
+        "description": "my_module",
+        "isExtraImport": true,
+        "detail": "my_module",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "importPath": "my_module",
+        "description": "my_module",
+        "isExtraImport": true,
+        "detail": "my_module",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "calendar",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "calendar",
+        "description": "calendar",
+        "detail": "calendar",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "hellow_func",
+        "kind": 2,
+        "importPath": "8functions.8functions",
+        "description": "8functions.8functions",
+        "peekOfCode": "def hellow_func():\n    a =5+6\n    print(a)\n# hellow_func()\n# value passing function\ndef greet_fun(greeting , name=\"name\"):\n    return '{}, /{}'.format(greeting , name);\n# print(greet_fun(\"hi\", \"kartik\"))    \n# new asvance function we pass this in function *args, **kwargs it store default inp paramater \n#values or default any kind of data ",
+        "detail": "8functions.8functions",
+        "documentation": {}
+    },
+    {
+        "label": "greet_fun",
+        "kind": 2,
+        "importPath": "8functions.8functions",
+        "description": "8functions.8functions",
+        "peekOfCode": "def greet_fun(greeting , name=\"name\"):\n    return '{}, /{}'.format(greeting , name);\n# print(greet_fun(\"hi\", \"kartik\"))    \n# new asvance function we pass this in function *args, **kwargs it store default inp paramater \n#values or default any kind of data \ndef student(*args, **kwargs):\n    print(args) #touple\n    print(kwargs) # dictonary key , vaalue\n# student('math' ,\"art\", name='kartik' , age =21)\ndef student1(*args, **kwargs):",
+        "detail": "8functions.8functions",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 2,
+        "importPath": "8functions.8functions",
+        "description": "8functions.8functions",
+        "peekOfCode": "def student(*args, **kwargs):\n    print(args) #touple\n    print(kwargs) # dictonary key , vaalue\n# student('math' ,\"art\", name='kartik' , age =21)\ndef student1(*args, **kwargs):\n    print(args) #touple\n    print(kwargs) # dictonary key , vaalue\ncourses =['math', 'art']\ninfo = {'name': 'kartik', 'age': 21}\n# student1(courses,info) this prints (['math', 'art'], {'name': 'kartik', 'age': 21}) we got all in touple we solve",
+        "detail": "8functions.8functions",
+        "documentation": {}
+    },
+    {
+        "label": "student1",
+        "kind": 2,
+        "importPath": "8functions.8functions",
+        "description": "8functions.8functions",
+        "peekOfCode": "def student1(*args, **kwargs):\n    print(args) #touple\n    print(kwargs) # dictonary key , vaalue\ncourses =['math', 'art']\ninfo = {'name': 'kartik', 'age': 21}\n# student1(courses,info) this prints (['math', 'art'], {'name': 'kartik', 'age': 21}) we got all in touple we solve\nstudent1(*courses,**info) # unpact the values",
+        "detail": "8functions.8functions",
+        "documentation": {}
+    },
+    {
+        "label": "info",
+        "kind": 5,
+        "importPath": "8functions.8functions",
+        "description": "8functions.8functions",
+        "peekOfCode": "info = {'name': 'kartik', 'age': 21}\n# student1(courses,info) this prints (['math', 'art'], {'name': 'kartik', 'age': 21}) we got all in touple we solve\nstudent1(*courses,**info) # unpact the values",
+        "detail": "8functions.8functions",
+        "documentation": {}
+    },
+    {
+        "label": "is_leap",
+        "kind": 2,
+        "importPath": "8functions.leapyr",
+        "description": "8functions.leapyr",
+        "peekOfCode": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 ==0)\ndef dayinmonth(year, month):\n    if not 1<= month <=12:\n        return \"invalid month\"\n    if month ==2 and is_leap(year):\n        return 29\n    return monthday[month]\nprint(is_leap(2020))\nprint(dayinmonth(2020,2))",
+        "detail": "8functions.leapyr",
+        "documentation": {}
+    },
+    {
+        "label": "dayinmonth",
+        "kind": 2,
+        "importPath": "8functions.leapyr",
+        "description": "8functions.leapyr",
+        "peekOfCode": "def dayinmonth(year, month):\n    if not 1<= month <=12:\n        return \"invalid month\"\n    if month ==2 and is_leap(year):\n        return 29\n    return monthday[month]\nprint(is_leap(2020))\nprint(dayinmonth(2020,2))",
+        "detail": "8functions.leapyr",
+        "documentation": {}
+    },
+    {
+        "label": "find_index",
+        "kind": 2,
+        "importPath": "9importmod.my_module",
+        "description": "9importmod.my_module",
+        "peekOfCode": "def find_index(to_serch, target):\n    for i, value in  enumerate(to_serch):\n        if value == target:\n            return i\n    return -1",
+        "detail": "9importmod.my_module",
+        "documentation": {}
+    },
+    {
+        "label": "rads",
+        "kind": 5,
+        "importPath": "9importmod.randomc",
+        "description": "9importmod.randomc",
+        "peekOfCode": "rads = math.radians(90)\nprint(rads)\nimport datetime\nimport calendar\ntoday = datetime.date.today()\nprint(today)\nprint(calendar.isleap(2017))\nimport os \nprint(os.getcwd())",
+        "detail": "9importmod.randomc",
+        "documentation": {}
+    },
+    {
+        "label": "today",
+        "kind": 5,
+        "importPath": "9importmod.randomc",
+        "description": "9importmod.randomc",
+        "peekOfCode": "today = datetime.date.today()\nprint(today)\nprint(calendar.isleap(2017))\nimport os \nprint(os.getcwd())",
+        "detail": "9importmod.randomc",
+        "documentation": {}
+    },
+    {
+        "label": "new_a",
+        "kind": 5,
+        "importPath": "2string_1",
+        "description": "2string_1",
+        "peekOfCode": "new_a = a.replace('World','universe')\nprint(new_a)\n# concate the two string\nb= \"hello\"\nc=\"kartik\"\n# message= b + \" \" + c + \" \" + \"welcome\"\n# message= ' {}, {} welcome'.format(b,c)\nmessage= f'{b}, {c.upper()} welcome'\nprint(message)\n#dri",
+        "detail": "2string_1",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "3integers",
+        "description": "3integers",
+        "peekOfCode": "num2 =  2\nprint(num1 == num2)  # gives bool op\nprint(num1 != num2)\nprint(num1 >= num2)\nprint(num1 <= num2)\n# string value to num\nn1= \"100\"\nn2 =\"200\"\nprint(n1 + n2)\n#casting",
+        "detail": "3integers",
+        "documentation": {}
+    },
+    {
+        "label": "n1",
+        "kind": 5,
+        "importPath": "3integers",
+        "description": "3integers",
+        "peekOfCode": "n1 =  int(n1)\nn2 = int(n2)\nprint(n1 + n2)",
+        "detail": "3integers",
+        "documentation": {}
+    },
+    {
+        "label": "n2",
+        "kind": 5,
+        "importPath": "3integers",
+        "description": "3integers",
+        "peekOfCode": "n2 = int(n2)\nprint(n1 + n2)",
+        "detail": "3integers",
+        "documentation": {}
+    },
+    {
+        "label": "courses",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "courses = [\"History\" , \"maths\" ,\"Sceince\" ,\"physics\"]\nprint (courses[-1]) # for last items\nprint (courses[0])\nprint (courses[0:3]) #print f4rom 0  to 3 index but print 3 value\n# append\ncourses.append(\"Data Science\")  # append value at the end of list\nprint(courses)\ncourses.insert( 0,\"Data Science\") # insert the valuse at the given inedex\nprint(courses)\n#insert method",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "courses1",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "courses1 = [\"History\" , \"maths\" ,\"Sceince\" ,\"physics\"]\ncourses2 = [\"Javascript\" , \"react\" ,\"node\"] # below this values are stored at index 0\n# courses1.insert(0, courses2)\nprint(courses1)\nprint(courses1[0])\n#extend method for soving above problem in line 17- 18 append also give same error\ncourses1.extend(courses2)\nprint(courses1)\n#remove value\ncourses3 = [\"History\" , \"maths\" ,\"Sceince\" ,\"physics\"]",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "courses2",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "courses2 = [\"Javascript\" , \"react\" ,\"node\"] # below this values are stored at index 0\n# courses1.insert(0, courses2)\nprint(courses1)\nprint(courses1[0])\n#extend method for soving above problem in line 17- 18 append also give same error\ncourses1.extend(courses2)\nprint(courses1)\n#remove value\ncourses3 = [\"History\" , \"maths\" ,\"Sceince\" ,\"physics\"]\n# courses3.remove(\"History\")",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "courses3",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "courses3 = [\"History\" , \"maths\" ,\"Sceince\" ,\"physics\"]\n# courses3.remove(\"History\")\nprint(courses3)\n# pop it renove the last value \npopr = courses3.pop()\nprint(courses3)\nprint(popr)\n#  methodes sort  list\nlist = [\"History\" , \"maths\" ,\"sceince\" ,\"physics\"]\n# reverse",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "popr",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "popr = courses3.pop()\nprint(courses3)\nprint(popr)\n#  methodes sort  list\nlist = [\"History\" , \"maths\" ,\"sceince\" ,\"physics\"]\n# reverse\nlist.reverse()\nprint(list)\n#sorting by alphabetial order\nnums = [1,4,6,7,23,7,2,4,23,5,34]",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "list",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "list = [\"History\" , \"maths\" ,\"sceince\" ,\"physics\"]\n# reverse\nlist.reverse()\nprint(list)\n#sorting by alphabetial order\nnums = [1,4,6,7,23,7,2,4,23,5,34]\n# nums.sort()\nnums.sort(reverse=True) # print in reverse order\nprint(nums)\n# another is sorted function also / but we want to store that in some varaible",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "nums = [1,4,6,7,23,7,2,4,23,5,34]\n# nums.sort()\nnums.sort(reverse=True) # print in reverse order\nprint(nums)\n# another is sorted function also / but we want to store that in some varaible\nnums1 = [1,4,6,7,23,7,2,4,23,5,34]\nns = sorted(nums1)\nprint(ns)\n# min max sum\nprint(min(nums1))",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "nums1",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "nums1 = [1,4,6,7,23,7,2,4,23,5,34]\nns = sorted(nums1)\nprint(ns)\n# min max sum\nprint(min(nums1))\nprint(max(nums1))\nprint(sum(nums1))\n# getting value index\nlist1 = [\"History\" , \"maths\" ,\"Science\" ,\"physics\"]\nprint(list1.index(\"Science\"))",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "ns",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "ns = sorted(nums1)\nprint(ns)\n# min max sum\nprint(min(nums1))\nprint(max(nums1))\nprint(sum(nums1))\n# getting value index\nlist1 = [\"History\" , \"maths\" ,\"Science\" ,\"physics\"]\nprint(list1.index(\"Science\"))\n# checing value ans in bool",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "list1 = [\"History\" , \"maths\" ,\"Science\" ,\"physics\"]\nprint(list1.index(\"Science\"))\n# checing value ans in bool\nprint(\"Science\" in list1)\n# for in loop\nfor item in list1:\n    print(item)\n# for print index and  item boath // also pass start param\nfor index ,item in enumerate(list1 , start=1):\n    print(index,item)",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "list12",
+        "kind": 5,
+        "importPath": "4listTuples",
+        "description": "4listTuples",
+        "peekOfCode": "list12 = ','.join(list1)\nprint(list12)\n# we cant append in ( tuple )seen muatible example\n# tup1=(\"History\" , \"maths\" ,\"Science\" ,\"physics\")\n# tup2 =tup1\n# tup1[0]= \"art\" # cant appent \n# print(tup1)\n# print(tup2)\n# sets\ncs= {\"History\" , \"maths\" ,\"Science\" ,\"physics\"}  # {} => this print the random value in the tuple",
+        "detail": "4listTuples",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 5,
+        "importPath": "5dictonaries",
+        "description": "5dictonaries",
+        "peekOfCode": "student = {'name': 'john' , 'age':25 ,\"course\": ['maths', \"ds\"]}\nprint(student['course'])\nprint(student.get(\"name\"))\nstudent['phone']='555-55555'\nprint(student.get(\"phone\",'not found'))\nprint(student)\n# updte\nstudent.update({'name': 'john' , 'age':25 ,\"course\": ['maths', \"ds\"], 'phone':555-55555})\n# delete\n# del student['age']",
+        "detail": "5dictonaries",
+        "documentation": {}
+    },
+    {
+        "label": "pp",
+        "kind": 5,
+        "importPath": "5dictonaries",
+        "description": "5dictonaries",
+        "peekOfCode": "pp = student.pop(\"age\")\nprint(student)\nprint(pp)\nprint(student.items()) # print item\nprint(student.keys()) # print key\n# for method\nfor key in student:\n    print(key)\n# for method for both the key and value \nfor key,value in student.items():",
+        "detail": "5dictonaries",
+        "documentation": {}
+    },
+    {
+        "label": "lang",
+        "kind": 5,
+        "importPath": "6conditionbool",
+        "description": "6conditionbool",
+        "peekOfCode": "lang = 'python'\n# a = input(\"enter\")\nif lang == 'python':\n    print('conditional was True')\nelif lang == 'java':\n    print(\"it is a java\")\nelif lang == 'js':\n    print(\"it is a js\")\nelse:\n    print(\"not match\")",
+        "detail": "6conditionbool",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 5,
+        "importPath": "6conditionbool",
+        "description": "6conditionbool",
+        "peekOfCode": "login = True  # \" \" , [] , {} Dictonaries, () , 0 empty this will give false answer\nif user == 'Admin' and login:\n# if user == 'Admin' or login: print admin page\n    print('admin page')\nelse:\n    print(\"bad credits\")\na =[1,2,3] \nb =[1,2,3]\nprint(a==b) # true\nprint(a is b) # false",
+        "detail": "6conditionbool",
+        "documentation": {}
+    }
+]
