@@ -70,6 +70,15 @@
         "documentation": {}
     },
     {
+        "label": "builtins",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "builtins",
+        "description": "builtins",
+        "detail": "builtins",
+        "documentation": {}
+    },
+    {
         "label": "hellow_func",
         "kind": 2,
         "importPath": "8functions.8functions",
@@ -164,8 +173,53 @@
         "kind": 2,
         "importPath": "10legb",
         "description": "10legb",
-        "peekOfCode": "def test():\n    global x # working as global variable\n    x = 'local x'\n    y='local y' # local define cannot acces out side of function\n    print(y)\n    print(x)\ntest()\nprint(x)",
+        "peekOfCode": "def test(z):\n    y='local y' # local define cannot acces out side of function\n    print(y)\n    print(z)\ntest(\"local z\")\n# bultin function in python\nimport builtins\n# print(dir(builtins))\ndef my_min():\n    pass",
         "detail": "10legb",
+        "documentation": {}
+    },
+    {
+        "label": "my_min",
+        "kind": 2,
+        "importPath": "10legb",
+        "description": "10legb",
+        "peekOfCode": "def my_min():\n    pass\n# m= min([5,1,4,2,3])\n# print(m)\n#enclosing have nested function\ndef outer():\n    x='outer x' # when we comment this got error             \n    def inner():\n        nonlocal x #  nonlocal working as global variable\n        x='inner x' # when we comment this got outer X ans",
+        "detail": "10legb",
+        "documentation": {}
+    },
+    {
+        "label": "outer",
+        "kind": 2,
+        "importPath": "10legb",
+        "description": "10legb",
+        "peekOfCode": "def outer():\n    x='outer x' # when we comment this got error             \n    def inner():\n        nonlocal x #  nonlocal working as global variable\n        x='inner x' # when we comment this got outer X ans\n        print(x)\n    inner()\n    print(x)\nouter()",
+        "detail": "10legb",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "12listcompher",
+        "description": "12listcompher",
+        "peekOfCode": "my_list = [n for n in nums]\nprint (my_list)\n#for square of numbers\nmy_list = [n*n for n in nums]\nprint (my_list)\n#using map + lambda\nmy_list = map(lambda n: n*n, nums)\nprint (list(my_list))\n#even numbers\nmy_list =[]",
+        "detail": "12listcompher",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "12listcompher",
+        "description": "12listcompher",
+        "peekOfCode": "my_list = [n*n for n in nums]\nprint (my_list)\n#using map + lambda\nmy_list = map(lambda n: n*n, nums)\nprint (list(my_list))\n#even numbers\nmy_list =[]\nfor n in nums:\n    if n%2 ==0:\n        my_list.append(n)",
+        "detail": "12listcompher",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "12listcompher",
+        "description": "12listcompher",
+        "peekOfCode": "my_list = map(lambda n: n*n, nums)\nprint (list(my_list))\n#even numbers\nmy_list =[]\nfor n in nums:\n    if n%2 ==0:\n        my_list.append(n)\nprint(my_list)",
+        "detail": "12listcompher",
         "documentation": {}
     },
     {
