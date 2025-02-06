@@ -83,7 +83,7 @@
         "kind": 2,
         "importPath": "8functions.8functions",
         "description": "8functions.8functions",
-        "peekOfCode": "def hellow_func():\n    a =5+6\n    print(a)\n# hellow_func()\n# value passing function\ndef greet_fun(greeting , name=\"name\"):\n    return '{}, /{}'.format(greeting , name);\n# print(greet_fun(\"hi\", \"kartik\"))    \n# new asvance function we pass this in function *args, **kwargs it store default inp paramater \n#values or default any kind of data ",
+        "peekOfCode": "def hellow_func():\n    a =5+6\n    print(a)\n# hellow_func()\n# value passing function\ndef greet_fun(greeting , name=\"name\"):\n    return '{}, /{}'.format(greeting , name)\n# print(greet_fun(\"hi\", \"kartik\"))    \n# new asvance function we pass this in function *args, **kwargs it store default inp paramater \n#values or default any kind of data ",
         "detail": "8functions.8functions",
         "documentation": {}
     },
@@ -92,7 +92,7 @@
         "kind": 2,
         "importPath": "8functions.8functions",
         "description": "8functions.8functions",
-        "peekOfCode": "def greet_fun(greeting , name=\"name\"):\n    return '{}, /{}'.format(greeting , name);\n# print(greet_fun(\"hi\", \"kartik\"))    \n# new asvance function we pass this in function *args, **kwargs it store default inp paramater \n#values or default any kind of data \ndef student(*args, **kwargs):\n    print(args) #touple\n    print(kwargs) # dictonary key , vaalue\n# student('math' ,\"art\", name='kartik' , age =21)\ndef student1(*args, **kwargs):",
+        "peekOfCode": "def greet_fun(greeting , name=\"name\"):\n    return '{}, /{}'.format(greeting , name)\n# print(greet_fun(\"hi\", \"kartik\"))    \n# new asvance function we pass this in function *args, **kwargs it store default inp paramater \n#values or default any kind of data \ndef student(*args, **kwargs):\n    print(args) #touple\n    print(kwargs) # dictonary key , vaalue\n# student('math' ,\"art\", name='kartik' , age =21)\ndef student1(*args, **kwargs):",
         "detail": "8functions.8functions",
         "documentation": {}
     },
@@ -196,11 +196,11 @@
         "documentation": {}
     },
     {
-        "label": "my_list",
-        "kind": 5,
+        "label": "gen_func",
+        "kind": 2,
         "importPath": "12listcompher",
         "description": "12listcompher",
-        "peekOfCode": "my_list = [n for n in nums]\nprint (my_list)\n#for square of numbers\nmy_list = [n*n for n in nums]\nprint (my_list)\n#using map + lambda\nmy_list = map(lambda n: n*n, nums)\nprint (list(my_list))\n#even numbers\nmy_list =[]",
+        "peekOfCode": "def gen_func(nums):\n    for n in nums:\n       yield n*n\nmy_gen = gen_func(nums)\nfor i in my_gen:\n    print(i)\nmy_gen =(n*n for n in nums)",
         "detail": "12listcompher",
         "documentation": {}
     },
@@ -209,16 +209,34 @@
         "kind": 5,
         "importPath": "12listcompher",
         "description": "12listcompher",
-        "peekOfCode": "my_list = [n*n for n in nums]\nprint (my_list)\n#using map + lambda\nmy_list = map(lambda n: n*n, nums)\nprint (list(my_list))\n#even numbers\nmy_list =[]\nfor n in nums:\n    if n%2 ==0:\n        my_list.append(n)",
+        "peekOfCode": "my_list = filter(lambda n: n%2 ==0, nums)\nprint(list(my_list))\n#dictonary comprehension \nnames= ['Bruce', 'Clark', 'Peter', 'Logan', 'Wade']\nheros =['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']\nprint (list(zip(names,heros)))\n# my_dict ={}\n# for name, hero in zip(names,heros):\n#     my_dict[name] = hero\n# print(my_dict)",
         "detail": "12listcompher",
         "documentation": {}
     },
     {
-        "label": "my_list",
+        "label": "my_set",
         "kind": 5,
         "importPath": "12listcompher",
         "description": "12listcompher",
-        "peekOfCode": "my_list = map(lambda n: n*n, nums)\nprint (list(my_list))\n#even numbers\nmy_list =[]\nfor n in nums:\n    if n%2 ==0:\n        my_list.append(n)\nprint(my_list)",
+        "peekOfCode": "my_set = set()\nfor n in nums:\n    my_set.add(n)\nprint(my_set)\nmy_set = {n for n in nums}\nprint (my_set)\n# generator expression\n# I want to yield 'n*n' for each 'n' in nums\nnums =[1,2,3,4,5,6,7,8,9,10]\ndef gen_func(nums):",
+        "detail": "12listcompher",
+        "documentation": {}
+    },
+    {
+        "label": "my_set",
+        "kind": 5,
+        "importPath": "12listcompher",
+        "description": "12listcompher",
+        "peekOfCode": "my_set = {n for n in nums}\nprint (my_set)\n# generator expression\n# I want to yield 'n*n' for each 'n' in nums\nnums =[1,2,3,4,5,6,7,8,9,10]\ndef gen_func(nums):\n    for n in nums:\n       yield n*n\nmy_gen = gen_func(nums)\nfor i in my_gen:",
+        "detail": "12listcompher",
+        "documentation": {}
+    },
+    {
+        "label": "my_gen",
+        "kind": 5,
+        "importPath": "12listcompher",
+        "description": "12listcompher",
+        "peekOfCode": "my_gen = gen_func(nums)\nfor i in my_gen:\n    print(i)\nmy_gen =(n*n for n in nums)",
         "detail": "12listcompher",
         "documentation": {}
     },

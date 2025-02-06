@@ -6,7 +6,7 @@ def hellow_func():
 # value passing function
 
 def greet_fun(greeting , name="name"):
-    return '{}, /{}'.format(greeting , name);
+    return '{}, /{}'.format(greeting , name)
 # print(greet_fun("hi", "kartik"))    
 
 # new asvance function we pass this in function *args, **kwargs it store default inp paramater 
