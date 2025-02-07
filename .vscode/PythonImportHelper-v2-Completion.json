@@ -241,6 +241,78 @@
         "documentation": {}
     },
     {
+        "label": "Employee",
+        "kind": 6,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "class Employee:\n    def __init__(self, name, age, salary):\n        self.name = name\n        self.age = age\n        self.salary = salary\n    def __repr__(self):\n        return '({},{},${})'.format(self.name, self.age, self.salary)\ne1 = Employee('Carl', 37, 70000)\ne2 = Employee('Sarah', 29, 80000)\ne3 = Employee('John', 43, 90000)",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "sli",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "sli = sorted(li)\nprint('Sorted list:', sli)\n#reverse\nslir = sorted(li, reverse=True)\nprint('Sorted reverse list:', slir)\nli.sort()   # li.sort(reverse=True)\nprint(li)\n# tuple\ntup =(9,1,8,2,7,3,6,4,5)\ns_tup = sorted(tup) # it does not have this tup.sort()",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "slir",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "slir = sorted(li, reverse=True)\nprint('Sorted reverse list:', slir)\nli.sort()   # li.sort(reverse=True)\nprint(li)\n# tuple\ntup =(9,1,8,2,7,3,6,4,5)\ns_tup = sorted(tup) # it does not have this tup.sort()\nprint('Sorted tuple:', s_tup)\n#dictionary\ndi ={'name':'Corey', 'job':'programming', 'age':None, 'os':'Mac'}",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "s_tup",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "s_tup = sorted(tup) # it does not have this tup.sort()\nprint('Sorted tuple:', s_tup)\n#dictionary\ndi ={'name':'Corey', 'job':'programming', 'age':None, 'os':'Mac'}\ns_di=sorted(di)\nprint('Sorted dictionary:', s_di)\n# objects sorting \nclass Employee:\n    def __init__(self, name, age, salary):\n        self.name = name",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "e1",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "e1 = Employee('Carl', 37, 70000)\ne2 = Employee('Sarah', 29, 80000)\ne3 = Employee('John', 43, 90000)\nemployees =[e1,e2,e3]\n# def e_sort(emp):\n    # return emp.name\n# s_employees = sorted(employees, key=e_sort) by name\ns_employees = sorted(employees, key=lambda e: e.age)\nprint(s_employees)",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "e2",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "e2 = Employee('Sarah', 29, 80000)\ne3 = Employee('John', 43, 90000)\nemployees =[e1,e2,e3]\n# def e_sort(emp):\n    # return emp.name\n# s_employees = sorted(employees, key=e_sort) by name\ns_employees = sorted(employees, key=lambda e: e.age)\nprint(s_employees)",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "e3",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "e3 = Employee('John', 43, 90000)\nemployees =[e1,e2,e3]\n# def e_sort(emp):\n    # return emp.name\n# s_employees = sorted(employees, key=e_sort) by name\ns_employees = sorted(employees, key=lambda e: e.age)\nprint(s_employees)",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "s_employees",
+        "kind": 5,
+        "importPath": "13sortinglisttuplesall",
+        "description": "13sortinglisttuplesall",
+        "peekOfCode": "s_employees = sorted(employees, key=lambda e: e.age)\nprint(s_employees)",
+        "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
         "label": "new_a",
         "kind": 5,
         "importPath": "2string_1",
