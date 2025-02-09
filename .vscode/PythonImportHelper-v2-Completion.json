@@ -79,6 +79,23 @@
         "documentation": {}
     },
     {
+        "label": "File",
+        "importPath": "click",
+        "description": "click",
+        "isExtraImport": true,
+        "detail": "click",
+        "documentation": {}
+    },
+    {
+        "label": "pytz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytz",
+        "description": "pytz",
+        "detail": "pytz",
+        "documentation": {}
+    },
+    {
         "label": "hellow_func",
         "kind": 2,
         "importPath": "8functions.8functions",
@@ -310,6 +327,204 @@
         "description": "13sortinglisttuplesall",
         "peekOfCode": "s_employees = sorted(employees, key=lambda e: e.age)\nprint(s_employees)",
         "detail": "13sortinglisttuplesall",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\npl = Person('Jack', 33)\nsentence = 'My name is {0.name} and I am {0.age} years old'.format(pl)\nprint(sentence)\n# for decimal places we want to use f at {;.2f}\nsentence = '1 mb is equal to {:,} bytes'.format(1000**2)\nprint(sentence)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "person",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "person = {'name':'jenn', 'age':23}\n# sentence = 'My name is {} and I am {} years old'.format(person['name'], person['age'])\n# print(sentence)\nsentence = 'My name is {0} and I am {1} years old'.format(person['name'], person['age'])\nprint(sentence)\n# sentence = 'My name is {0[name]} and I am {1[age]} years old'.format(person)\n# print(sentence)\nl = {'name': 'John', 'age': 30}\nsentence = 'My name is {name} and I am {age} years old'.format(**l)\nprint(sentence)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "sentence = 'My name is {0} and I am {1} years old'.format(person['name'], person['age'])\nprint(sentence)\n# sentence = 'My name is {0[name]} and I am {1[age]} years old'.format(person)\n# print(sentence)\nl = {'name': 'John', 'age': 30}\nsentence = 'My name is {name} and I am {age} years old'.format(**l)\nprint(sentence)\ntag='h1'\ntext='this is a headline'\nsentence='<{0}>{1}</{0}>'.format(tag, text)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "l = {'name': 'John', 'age': 30}\nsentence = 'My name is {name} and I am {age} years old'.format(**l)\nprint(sentence)\ntag='h1'\ntext='this is a headline'\nsentence='<{0}>{1}</{0}>'.format(tag, text)\nprint(sentence)\nsentence=f'<{tag}>{text}</{tag}>'\nprint(sentence)\n# now object oriented way",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "sentence = 'My name is {name} and I am {age} years old'.format(**l)\nprint(sentence)\ntag='h1'\ntext='this is a headline'\nsentence='<{0}>{1}</{0}>'.format(tag, text)\nprint(sentence)\nsentence=f'<{tag}>{text}</{tag}>'\nprint(sentence)\n# now object oriented way\nclass Person:",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "pl",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "pl = Person('Jack', 33)\nsentence = 'My name is {0.name} and I am {0.age} years old'.format(pl)\nprint(sentence)\n# for decimal places we want to use f at {;.2f}\nsentence = '1 mb is equal to {:,} bytes'.format(1000**2)\nprint(sentence)\n# date time\nimport datetime\nmy_date = datetime.datetime(2016, 9, 24, 12, 30, 45)\nprint(my_date)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "sentence = 'My name is {0.name} and I am {0.age} years old'.format(pl)\nprint(sentence)\n# for decimal places we want to use f at {;.2f}\nsentence = '1 mb is equal to {:,} bytes'.format(1000**2)\nprint(sentence)\n# date time\nimport datetime\nmy_date = datetime.datetime(2016, 9, 24, 12, 30, 45)\nprint(my_date)\nsentence = '{:%B %d, %Y}'.format(my_date)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "sentence = '1 mb is equal to {:,} bytes'.format(1000**2)\nprint(sentence)\n# date time\nimport datetime\nmy_date = datetime.datetime(2016, 9, 24, 12, 30, 45)\nprint(my_date)\nsentence = '{:%B %d, %Y}'.format(my_date)\nprint(sentence)\n# MORE COMPLEX\nsentence= '{0:%B %d, %Y} fell on a {0:%A} and was the {0:%j} day of the year'.format(my_date)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "my_date",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "my_date = datetime.datetime(2016, 9, 24, 12, 30, 45)\nprint(my_date)\nsentence = '{:%B %d, %Y}'.format(my_date)\nprint(sentence)\n# MORE COMPLEX\nsentence= '{0:%B %d, %Y} fell on a {0:%A} and was the {0:%j} day of the year'.format(my_date)\nprint(sentence)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "sentence",
+        "kind": 5,
+        "importPath": "15StringFormatting",
+        "description": "15StringFormatting",
+        "peekOfCode": "sentence = '{:%B %d, %Y}'.format(my_date)\nprint(sentence)\n# MORE COMPLEX\nsentence= '{0:%B %d, %Y} fell on a {0:%A} and was the {0:%j} day of the year'.format(my_date)\nprint(sentence)",
+        "detail": "15StringFormatting",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "d = datetime.date (2016,7,24)\nprint(d)\ntday = datetime.date.today()\nprint(tday.weekday()) # Monday = 0, Sunday = 6\nprint(tday.isoweekday()) # Monday = 1, Sunday = 7\ntdelta = datetime.timedelta(days=7) # adding 7 days\nprint(tday + tdelta) # adding 7 days to current date\nprint(tday - tdelta) # subtracting 7 days from current date\\\\\nbday = datetime.date(2004, 6, 18)\ntill_bdy = bday - tday",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "tday",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "tday = datetime.date.today()\nprint(tday.weekday()) # Monday = 0, Sunday = 6\nprint(tday.isoweekday()) # Monday = 1, Sunday = 7\ntdelta = datetime.timedelta(days=7) # adding 7 days\nprint(tday + tdelta) # adding 7 days to current date\nprint(tday - tdelta) # subtracting 7 days from current date\\\\\nbday = datetime.date(2004, 6, 18)\ntill_bdy = bday - tday\nprint(till_bdy.total_seconds())\nprint(till_bdy.days)",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "tdelta",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "tdelta = datetime.timedelta(days=7) # adding 7 days\nprint(tday + tdelta) # adding 7 days to current date\nprint(tday - tdelta) # subtracting 7 days from current date\\\\\nbday = datetime.date(2004, 6, 18)\ntill_bdy = bday - tday\nprint(till_bdy.total_seconds())\nprint(till_bdy.days)\ndt = datetime.datetime(2016, 7, 26, 12, 30, 45, 100000)\nprint(dt)\nprint(dt.time())",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "bday",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "bday = datetime.date(2004, 6, 18)\ntill_bdy = bday - tday\nprint(till_bdy.total_seconds())\nprint(till_bdy.days)\ndt = datetime.datetime(2016, 7, 26, 12, 30, 45, 100000)\nprint(dt)\nprint(dt.time())\nprint(dt.date())\ntdel = datetime.timedelta(hours=12)\nprint(dt + tdel)",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "till_bdy",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "till_bdy = bday - tday\nprint(till_bdy.total_seconds())\nprint(till_bdy.days)\ndt = datetime.datetime(2016, 7, 26, 12, 30, 45, 100000)\nprint(dt)\nprint(dt.time())\nprint(dt.date())\ntdel = datetime.timedelta(hours=12)\nprint(dt + tdel)\nprint(\"-----------------\")",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "dt",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "dt = datetime.datetime(2016, 7, 26, 12, 30, 45, 100000)\nprint(dt)\nprint(dt.time())\nprint(dt.date())\ntdel = datetime.timedelta(hours=12)\nprint(dt + tdel)\nprint(\"-----------------\")\nde_today = datetime.datetime.today()\nde_now = datetime.datetime.now()\nde_utcnows = datetime.datetime.utcnow()",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "tdel",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "tdel = datetime.timedelta(hours=12)\nprint(dt + tdel)\nprint(\"-----------------\")\nde_today = datetime.datetime.today()\nde_now = datetime.datetime.now()\nde_utcnows = datetime.datetime.utcnow()\nprint(de_today)\nprint(de_now)\nprint(de_utcnows)\n# using pytz",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "de_today",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "de_today = datetime.datetime.today()\nde_now = datetime.datetime.now()\nde_utcnows = datetime.datetime.utcnow()\nprint(de_today)\nprint(de_now)\nprint(de_utcnows)\n# using pytz\nimport pytz\ndtp=datetime.datetime(2016, 7, 27, 12, 30, 45, tzinfo=pytz.UTC)\nprint(dtp)",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "de_now",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "de_now = datetime.datetime.now()\nde_utcnows = datetime.datetime.utcnow()\nprint(de_today)\nprint(de_now)\nprint(de_utcnows)\n# using pytz\nimport pytz\ndtp=datetime.datetime(2016, 7, 27, 12, 30, 45, tzinfo=pytz.UTC)\nprint(dtp)\nde_nowp = datetime.datetime.now(tz=pytz.UTC)",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "de_utcnows",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "de_utcnows = datetime.datetime.utcnow()\nprint(de_today)\nprint(de_now)\nprint(de_utcnows)\n# using pytz\nimport pytz\ndtp=datetime.datetime(2016, 7, 27, 12, 30, 45, tzinfo=pytz.UTC)\nprint(dtp)\nde_nowp = datetime.datetime.now(tz=pytz.UTC)\nprint(de_nowp)",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "de_nowp",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "de_nowp = datetime.datetime.now(tz=pytz.UTC)\nprint(de_nowp)\n# tz for all time xone\ndt_utcnow = datetime.datetime.utcnow().replace(tzinfo=pytz.UTC)\nfor tz in pytz.all_timezones:\n    tzi = dt_utcnow.astimezone(pytz.timezone(tz))\n    print(tzi , tz)",
+        "detail": "16datemod",
+        "documentation": {}
+    },
+    {
+        "label": "dt_utcnow",
+        "kind": 5,
+        "importPath": "16datemod",
+        "description": "16datemod",
+        "peekOfCode": "dt_utcnow = datetime.datetime.utcnow().replace(tzinfo=pytz.UTC)\nfor tz in pytz.all_timezones:\n    tzi = dt_utcnow.astimezone(pytz.timezone(tz))\n    print(tzi , tz)",
+        "detail": "16datemod",
         "documentation": {}
     },
     {
