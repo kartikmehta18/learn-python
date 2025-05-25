@@ -10,3 +10,10 @@ print(my_list[::-1])# -1 do reverse
 
 strm ="https://www.youtube.com/watch"
 print(strm[::-1])
+
+
+a=input("whats your 1st name")
+print(len(a))
+b= "kawerinc iOQNH $ OI$$HH"
+print(b.find("$"))
+print(b.count("$"))

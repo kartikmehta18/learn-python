@@ -96,6 +96,22 @@
         "documentation": {}
     },
     {
+        "label": "OpenAI",
+        "importPath": "openai",
+        "description": "openai",
+        "isExtraImport": true,
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "hellow_func",
         "kind": 2,
         "importPath": "8functions.8functions",
@@ -658,7 +674,7 @@
         "kind": 5,
         "importPath": "4listTuples",
         "description": "4listTuples",
-        "peekOfCode": "list12 = ','.join(list1)\nprint(list12)\n# we cant append in ( tuple )seen muatible example\n# tup1=(\"History\" , \"maths\" ,\"Science\" ,\"physics\")\n# tup2 =tup1\n# tup1[0]= \"art\" # cant appent \n# print(tup1)\n# print(tup2)\n# sets\ncs= {\"History\" , \"maths\" ,\"Science\" ,\"physics\"}  # {} => this print the random value in the tuple",
+        "peekOfCode": "list12 = ','.join(list1)\nprint(list12)\n# we cant append in ( tuple )seen muatible example\n# tup1=(\"History\" , \"maths\" ,\"Science\" ,\"physics\")\n# tup2 =tup1\n# tup1[0]= \"art\" # cant appent \n# print(tup1)\n# print(tup2)\nprint(\"set.....\")\n# sets",
         "detail": "4listTuples",
         "documentation": {}
     },
@@ -696,6 +712,33 @@
         "description": "6conditionbool",
         "peekOfCode": "login = True  # \" \" , [] , {} Dictonaries, () , 0 empty this will give false answer\nif user == 'Admin' and login:\n# if user == 'Admin' or login: print admin page\n    print('admin page')\nelse:\n    print(\"bad credits\")\na =[1,2,3] \nb =[1,2,3]\nprint(a==b) # true\nprint(a is b) # false",
         "detail": "6conditionbool",
+        "documentation": {}
+    },
+    {
+        "label": "ask_llm",
+        "kind": 2,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "def ask_llm(prompt):\n    response = client.chat.completions.create(\n        model=\"gpt-3.5-turbo\",  # Or \"gpt-4\"\n        messages=[\n            {\"role\": \"user\", \"content\": prompt}\n        ],\n        temperature=0.7\n    )\n    return response.choices[0].message.content\ndef main():",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "def main():\n    print(\"Hello! I'm your LLM Agent. Ask me anything.\")\n    while True:\n        try:\n            user_input = input(\"You: \")\n            if user_input.lower() in ['exit', 'quit']:\n                print(\"Goodbye!\")\n                break\n            answer = ask_llm(user_input)\n            print(f\"AI: {answer}\")",
+        "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "agent",
+        "description": "agent",
+        "peekOfCode": "client = OpenAI(api_key=os.getenv(\"OPENAI_API_KEY\"))\ndef ask_llm(prompt):\n    response = client.chat.completions.create(\n        model=\"gpt-3.5-turbo\",  # Or \"gpt-4\"\n        messages=[\n            {\"role\": \"user\", \"content\": prompt}\n        ],\n        temperature=0.7\n    )\n    return response.choices[0].message.content",
+        "detail": "agent",
         "documentation": {}
     }
 ]

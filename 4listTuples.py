@@ -85,11 +85,15 @@ print(list12)
 # tup1[0]= "art" # cant appent 
 # print(tup1)
 # print(tup2)
-
+print("set.....")
 # sets
 
 cs= {"History" , "maths" ,"Science" ,"physics"}  # {} => this print the random value in the tuple
 print(cs)
+#set (mutable)  elements (immutible) doesnot haive duplicate values  method -> add -> remove -> pop  -> clear
+# null_set
+coll=set()
+
 
 # intersection, differrence,union methhod
 cs1= {"History" , "maths" ,"Science" ,"physics"}  
@@ -98,3 +102,29 @@ art= {"History" , "maths" ,"art" ,"design"}
 print(cs1.intersection(art))
 print(cs1.difference(art))
 print(cs1.union(art))
+
+
+
+
+#palindrome
+
+list12=[1,2,1]
+list13=[1,2,3]
+
+copy_list12 =list12.copy()
+copy_list12.reverse()
+if(copy_list12==list12):
+   print("palimdrome")
+else :
+    print("not") 
+    
+#grede
+
+grade=("C","D","A","A","B","C")
+grade1=["C","D","A","A","B","C"]
+print(grade.count("A"))   
+
+# sort grade
+grade1.sort()
+print("sorted grade:", grade1)
+    
