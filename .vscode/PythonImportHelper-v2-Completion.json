@@ -202,6 +202,33 @@
         "documentation": {}
     },
     {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "oops.oops",
+        "description": "oops.oops",
+        "peekOfCode": "class Student:\n    # name=\"kartik\"\n    # default constreuctor\n    def __init__(self):\n        pass\n    # paramaterize constructio\n    def __init__(self,name,cgpa):\n        self.name=name\n        self.cgpa=cgpa\n        print(\"adding new student\")",
+        "detail": "oops.oops",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "oops.oops",
+        "description": "oops.oops",
+        "peekOfCode": "class Car:\n    color=\"blue\"\n    brand=\"audi\"\ncar1 = Car()\nprint(car1.color)\nprint(car1.brand)",
+        "detail": "oops.oops",
+        "documentation": {}
+    },
+    {
+        "label": "car1",
+        "kind": 5,
+        "importPath": "oops.oops",
+        "description": "oops.oops",
+        "peekOfCode": "car1 = Car()\nprint(car1.color)\nprint(car1.brand)",
+        "detail": "oops.oops",
+        "documentation": {}
+    },
+    {
         "label": "test",
         "kind": 2,
         "importPath": "10legb",

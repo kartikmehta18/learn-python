@@ -41,3 +41,11 @@ while True:
     print(x)
     x+=1
     
+    
+tup=(1,23,4,5,6,7,78,89,2,34,55,56)
+idx=0
+k= 2
+for i in tup:
+    idx+=1
+    if i==k:
+        print("got number x at index" ,idx)
