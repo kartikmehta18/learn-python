@@ -206,26 +206,53 @@
         "kind": 6,
         "importPath": "oops.oops",
         "description": "oops.oops",
-        "peekOfCode": "class Student:\n    # name=\"kartik\"\n    # default constreuctor\n    def __init__(self):\n        pass\n    # paramaterize constructio\n    def __init__(self,name,cgpa):\n        self.name=name\n        self.cgpa=cgpa\n        print(\"adding new student\")",
+        "peekOfCode": "class Student:\n    # name=\"kartik\"\n    # default constreuctor\n    college_name= \"piet\"\n    def __init__(self):\n        pass\n    # paramaterize constructio\n    def __init__(self,name,cgpa):\n        self.name=name\n        self.cgpa=cgpa",
         "detail": "oops.oops",
         "documentation": {}
     },
     {
-        "label": "Car",
+        "label": "Students",
         "kind": 6,
         "importPath": "oops.oops",
         "description": "oops.oops",
-        "peekOfCode": "class Car:\n    color=\"blue\"\n    brand=\"audi\"\ncar1 = Car()\nprint(car1.color)\nprint(car1.brand)",
+        "peekOfCode": "class Students:\n    def __init__(self,name,marks):\n        self.name=name\n        self.marks=marks\n    def avg(sellf,marks):\n        sum=0\n        for i in marks:\n            sum=sum+i\n        av=sum/3\n        print(\"your avg scoer is\",av)",
         "detail": "oops.oops",
         "documentation": {}
     },
     {
-        "label": "car1",
-        "kind": 5,
-        "importPath": "oops.oops",
-        "description": "oops.oops",
-        "peekOfCode": "car1 = Car()\nprint(car1.color)\nprint(car1.brand)",
-        "detail": "oops.oops",
+        "label": "Student",
+        "kind": 6,
+        "importPath": "oops.oops2",
+        "description": "oops.oops2",
+        "peekOfCode": "class Student:\n    def __init__(self,name):\n        self.name=name\ns1=Student(\"shradha\")\nprint(s1.name)\n# del for delete\n# del s1.name\n# print(s1.name)\n# if we put __acc it will be private\nclass Account:",
+        "detail": "oops.oops2",
+        "documentation": {}
+    },
+    {
+        "label": "Account",
+        "kind": 6,
+        "importPath": "oops.oops2",
+        "description": "oops.oops2",
+        "peekOfCode": "class Account:\n    def __init__(self,acc_no,acc_pass):\n        self.acc_no=acc_no\n        self.__acc_no=acc_pass #private\nacc1=Account(\"123456\",\"aabcde\")\nprint(acc1.acc_no)\n# print(acc1.acc_pass)\nclass Per:\n    __name=\"anonymous\"\n    def __hello(self):",
+        "detail": "oops.oops2",
+        "documentation": {}
+    },
+    {
+        "label": "Per",
+        "kind": 6,
+        "importPath": "oops.oops2",
+        "description": "oops.oops2",
+        "peekOfCode": "class Per:\n    __name=\"anonymous\"\n    def __hello(self):\n        print(\"hello dev's\")\n    def welcome(self):\n        self.__hello()\np1=Per()\nprint(p1.welcome())",
+        "detail": "oops.oops2",
+        "documentation": {}
+    },
+    {
+        "label": "Account",
+        "kind": 6,
+        "importPath": "oops.task",
+        "description": "oops.task",
+        "peekOfCode": "class Account:\n    def __init__(self,bal,acc):\n        self.balance= bal\n        self.account_no=acc\n    def debit(self,amount):\n        self.balance -=amount\n        print(\"Rs.\",amount,\"was debited\")\n        print(\"Total balance\",self.get_balance())\n    def credit(self,amount):\n        self.balance +=amount",
+        "detail": "oops.task",
         "documentation": {}
     },
     {
