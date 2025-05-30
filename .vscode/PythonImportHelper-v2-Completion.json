@@ -202,6 +202,60 @@
         "documentation": {}
     },
     {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "oops.inheritance",
+        "description": "oops.inheritance",
+        "peekOfCode": "class Car:\n    color=\"black\"\n    @staticmethod\n    def start():\n        print(\"car started..\")\n    @staticmethod\n    def stop():\n        print(\"car stopped..\")\n#single level inheritance       \nclass Toyotacar(Car):",
+        "detail": "oops.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Toyotacar",
+        "kind": 6,
+        "importPath": "oops.inheritance",
+        "description": "oops.inheritance",
+        "peekOfCode": "class Toyotacar(Car):\n    def __init__(self,brand):\n        self.name=brand\n#multilevel inheritance\nclass Fortuner(Toyotacar):\n    def __init__(self,type):\n        self.brand=type   \ncar1=Fortuner(\"petrol\")\nprint(car1.start())\ncar1=Toyotacar(\"old model\")",
+        "detail": "oops.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Fortuner",
+        "kind": 6,
+        "importPath": "oops.inheritance",
+        "description": "oops.inheritance",
+        "peekOfCode": "class Fortuner(Toyotacar):\n    def __init__(self,type):\n        self.brand=type   \ncar1=Fortuner(\"petrol\")\nprint(car1.start())\ncar1=Toyotacar(\"old model\")\ncar2=Toyotacar(\"new model\")\nprint(car1.start())\nprint(car1.color)",
+        "detail": "oops.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 6,
+        "importPath": "oops.multilevel",
+        "description": "oops.multilevel",
+        "peekOfCode": "class A:\n    varA=\"welcome to class A\"\nclass B:\n    varB=\"welcome to class B\"\nclass C(A,B):\n    varC=\"welcome to class C\"\nc1=C()\nprint(c1.varA)",
+        "detail": "oops.multilevel",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 6,
+        "importPath": "oops.multilevel",
+        "description": "oops.multilevel",
+        "peekOfCode": "class B:\n    varB=\"welcome to class B\"\nclass C(A,B):\n    varC=\"welcome to class C\"\nc1=C()\nprint(c1.varA)",
+        "detail": "oops.multilevel",
+        "documentation": {}
+    },
+    {
+        "label": "C",
+        "kind": 6,
+        "importPath": "oops.multilevel",
+        "description": "oops.multilevel",
+        "peekOfCode": "class C(A,B):\n    varC=\"welcome to class C\"\nc1=C()\nprint(c1.varA)",
+        "detail": "oops.multilevel",
+        "documentation": {}
+    },
+    {
         "label": "Student",
         "kind": 6,
         "importPath": "oops.oops",
@@ -244,6 +298,24 @@
         "description": "oops.oops2",
         "peekOfCode": "class Per:\n    __name=\"anonymous\"\n    def __hello(self):\n        print(\"hello dev's\")\n    def welcome(self):\n        self.__hello()\np1=Per()\nprint(p1.welcome())",
         "detail": "oops.oops2",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "oops.super",
+        "description": "oops.super",
+        "peekOfCode": "class Car:\n    def  __init__(self,type):\n        self.type=type\n    @staticmethod\n    def start():\n        print(\"car started..\")\n    @staticmethod\n    def stop():\n        print(\"car stopped..\")\n#single level inheritance       ",
+        "detail": "oops.super",
+        "documentation": {}
+    },
+    {
+        "label": "Toyotacar",
+        "kind": 6,
+        "importPath": "oops.super",
+        "description": "oops.super",
+        "peekOfCode": "class Toyotacar(Car):\n    def __init__(self,name,type):\n        super().__init__(type)\n        self.name=name\n        super().start()\ncar1=Toyotacar(\"pirus\",\"electric\")\n# print(car1.start())\nprint(car1.type)",
+        "detail": "oops.super",
         "documentation": {}
     },
     {

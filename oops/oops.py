@@ -3,6 +3,7 @@ class Student:
     # default constreuctor
     
     college_name= "piet"
+    
     def __init__(self):
         pass
     
