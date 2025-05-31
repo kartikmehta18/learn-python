@@ -310,11 +310,20 @@
         "documentation": {}
     },
     {
+        "label": "Complex",
+        "kind": 6,
+        "importPath": "oops.polymorphism",
+        "description": "oops.polymorphism",
+        "peekOfCode": "class Complex:\n    def init (self, real,img) :\n        self.real =real\n        self.img = img\n    def showNumber(self):\n        print(self.real, \"i +\",self.img, \"j \" )\n    def add(self,num2):    \n        newReal=self.real + num2.real\n        newiMG=self.img + num2.img\n        return Complex(newReal,newiMG)",
+        "detail": "oops.polymorphism",
+        "documentation": {}
+    },
+    {
         "label": "Student",
         "kind": 6,
         "importPath": "oops.property",
         "description": "oops.property",
-        "peekOfCode": "class Student:\n    def __init__(self,phy,chem,maths):\n        self.phy=phy\n        self.chem=chem\n        self.maths=maths",
+        "peekOfCode": "class Student:\n    def __init__(self,phy,chem,maths):\n        self.phy=phy\n        self.chem=chem\n        self.maths=maths\n        # self.percentage=str((self.phy + self.chem +self.maths )/3) + \"%\"\n    @property\n    def percentage(self):\n        return str((self.phy + self.chem +self.maths )/3) + \"%\"\nst1=Student(67,78,89)",
         "detail": "oops.property",
         "documentation": {}
     },
