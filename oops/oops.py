@@ -1,6 +1,6 @@
 class Student:
     # name="kartik"
-    # default constreuctor
+    # default constructor
     
     college_name= "piet"
     

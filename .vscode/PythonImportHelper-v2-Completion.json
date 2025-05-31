@@ -202,6 +202,15 @@
         "documentation": {}
     },
     {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "oops.classmethods",
+        "description": "oops.classmethods",
+        "peekOfCode": "class Person:\n    name =\"anonymous\"\n    # def changeName(self,name):\n    #     self.name=name\n    #     # Person.name=name # this is method update class atribute \n    #     self.__class__.name = \"kartik\"  #another method \n    @classmethod\n    def changeName(cls,name):\n        cls.name=name \np1 =Person()",
+        "detail": "oops.classmethods",
+        "documentation": {}
+    },
+    {
         "label": "Car",
         "kind": 6,
         "importPath": "oops.inheritance",
@@ -260,7 +269,7 @@
         "kind": 6,
         "importPath": "oops.oops",
         "description": "oops.oops",
-        "peekOfCode": "class Student:\n    # name=\"kartik\"\n    # default constreuctor\n    college_name= \"piet\"\n    def __init__(self):\n        pass\n    # paramaterize constructio\n    def __init__(self,name,cgpa):\n        self.name=name\n        self.cgpa=cgpa",
+        "peekOfCode": "class Student:\n    # name=\"kartik\"\n    # default constructor\n    college_name= \"piet\"\n    def __init__(self):\n        pass\n    # paramaterize constructio\n    def __init__(self,name,cgpa):\n        self.name=name\n        self.cgpa=cgpa",
         "detail": "oops.oops",
         "documentation": {}
     },
@@ -298,6 +307,15 @@
         "description": "oops.oops2",
         "peekOfCode": "class Per:\n    __name=\"anonymous\"\n    def __hello(self):\n        print(\"hello dev's\")\n    def welcome(self):\n        self.__hello()\np1=Per()\nprint(p1.welcome())",
         "detail": "oops.oops2",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "oops.property",
+        "description": "oops.property",
+        "peekOfCode": "class Student:\n    def __init__(self,phy,chem,maths):\n        self.phy=phy\n        self.chem=chem\n        self.maths=maths",
+        "detail": "oops.property",
         "documentation": {}
     },
     {
