@@ -12,7 +12,7 @@ strm ="https://www.youtube.com/watch"
 print(strm[::-1])
 
 
-a=input("whats your 1st name")
+a=input("whats  1st name")
 print(len(a))
 b= "kawerinc iOQNH $ OI$$HH"
 print(b.find("$"))

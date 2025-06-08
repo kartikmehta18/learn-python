@@ -70,6 +70,38 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "builtins",
         "kind": 6,
         "isExtraImport": true,
@@ -202,6 +234,78 @@
         "documentation": {}
     },
     {
+        "label": "Tea",
+        "kind": 6,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "class Tea(BaseModel):\n    id:int\n    name:str\n    origin:str\nteas:List[Tea] = []\n@app.get(\"/\")\ndef read_root():\n    return {\"message\": \"Welcome to the Tea API!\"}\n@app.get(\"/teas\")\ndef get_teas():",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "read_root",
+        "kind": 2,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "def read_root():\n    return {\"message\": \"Welcome to the Tea API!\"}\n@app.get(\"/teas\")\ndef get_teas():\n    return teas\n# @app.post(\"/teas\")\n# def add_tea(tea:Tea):\n#     teas.append(tea)\n#     return tea\n@app.post(\"/teas\")",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_teas",
+        "kind": 2,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "def get_teas():\n    return teas\n# @app.post(\"/teas\")\n# def add_tea(tea:Tea):\n#     teas.append(tea)\n#     return tea\n@app.post(\"/teas\")\ndef add_tea(tea: Tea):\n    if any(t.id == tea.id for t in teas):\n        raise HTTPException(status_code=400, detail=\"Tea with this ID already exists\")",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "add_tea",
+        "kind": 2,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "def add_tea(tea: Tea):\n    if any(t.id == tea.id for t in teas):\n        raise HTTPException(status_code=400, detail=\"Tea with this ID already exists\")\n    teas.append(tea)\n    return tea\n@app.put(\"/teas/{tea_id}\")\ndef update_tea(tea_id: int,update_tea:Tea):\n    for index, tea in enumerate(teas):\n        if tea.id == tea_id:\n            teas[index] =update_tea",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "update_tea",
+        "kind": 2,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "def update_tea(tea_id: int,update_tea:Tea):\n    for index, tea in enumerate(teas):\n        if tea.id == tea_id:\n            teas[index] =update_tea\n            return update_tea\n        return {\"error\":\"tea not found\"}\n@app.delete(\"/teas/{tea_id}\")\ndef delete_tea(tea_id:int):\n    for index, tea in enumerate(teas):\n        if tea.id== tea_id:",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "delete_tea",
+        "kind": 2,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "def delete_tea(tea_id:int):\n    for index, tea in enumerate(teas):\n        if tea.id== tea_id:\n           deleted = teas.pop(index)\n           return deleted\n    return {\"error\" :\"Tea not found\"}\n# http://127.0.0.1:8000/docs\n# uvicorn main:app --reload",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "app = FastAPI()\nclass Tea(BaseModel):\n    id:int\n    name:str\n    origin:str\nteas:List[Tea] = []\n@app.get(\"/\")\ndef read_root():\n    return {\"message\": \"Welcome to the Tea API!\"}\n@app.get(\"/teas\")",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
+        "label": "teas:List[Tea]",
+        "kind": 5,
+        "importPath": "fastAPI.main",
+        "description": "fastAPI.main",
+        "peekOfCode": "teas:List[Tea] = []\n@app.get(\"/\")\ndef read_root():\n    return {\"message\": \"Welcome to the Tea API!\"}\n@app.get(\"/teas\")\ndef get_teas():\n    return teas\n# @app.post(\"/teas\")\n# def add_tea(tea:Tea):\n#     teas.append(tea)",
+        "detail": "fastAPI.main",
+        "documentation": {}
+    },
+    {
         "label": "Person",
         "kind": 6,
         "importPath": "oops.classmethods",
@@ -314,7 +418,25 @@
         "kind": 6,
         "importPath": "oops.polymorphism",
         "description": "oops.polymorphism",
-        "peekOfCode": "class Complex:\n    def init (self, real,img) :\n        self.real =real\n        self.img = img\n    def showNumber(self):\n        print(self.real, \"i +\",self.img, \"j \" )\n    def add(self,num2):    \n        newReal=self.real + num2.real\n        newiMG=self.img + num2.img\n        return Complex(newReal,newiMG)",
+        "peekOfCode": "class Complex:\n    def __init__(self, real, img):\n        self.real = real\n        self.img = img\n    def showNumber(self):\n        print(f\"{self.real} + {self.img}i\")\n    # def add(self, num2):\n    # add dunder function\n    def __add__(self, num2):\n        newReal = self.real + num2.real",
+        "detail": "oops.polymorphism",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "oops.polymorphism",
+        "description": "oops.polymorphism",
+        "peekOfCode": "num1 = Complex(1, 3)\nnum1.showNumber()\nnum2 = Complex(4, 0)  # Fix: img part missing, set to 0\nnum2.showNumber()\n# num3 = num1.add(num2)\nnum3=num1+num2 # by dunder function add\nnum3.showNumber()\nnum3=num1-num2 # by dunder function sub\nnum3.showNumber()",
+        "detail": "oops.polymorphism",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "oops.polymorphism",
+        "description": "oops.polymorphism",
+        "peekOfCode": "num2 = Complex(4, 0)  # Fix: img part missing, set to 0\nnum2.showNumber()\n# num3 = num1.add(num2)\nnum3=num1+num2 # by dunder function add\nnum3.showNumber()\nnum3=num1-num2 # by dunder function sub\nnum3.showNumber()",
         "detail": "oops.polymorphism",
         "documentation": {}
     },
@@ -352,6 +474,42 @@
         "description": "oops.task",
         "peekOfCode": "class Account:\n    def __init__(self,bal,acc):\n        self.balance= bal\n        self.account_no=acc\n    def debit(self,amount):\n        self.balance -=amount\n        print(\"Rs.\",amount,\"was debited\")\n        print(\"Total balance\",self.get_balance())\n    def credit(self,amount):\n        self.balance +=amount",
         "detail": "oops.task",
+        "documentation": {}
+    },
+    {
+        "label": "Circl",
+        "kind": 6,
+        "importPath": "oops.task2",
+        "description": "oops.task2",
+        "peekOfCode": "class Circle :  \n    def __init__(self,radius):\n        self.radius=radius\n    def area(self):\n        return (22/7)* self.radius  **2\n    def peri(self):\n        return 2*  (22/7)* self.radius\nc1=Circle(21)\nprint(c1.area())\nprint(c1.peri())",
+        "detail": "oops.task2",
+        "documentation": {}
+    },
+    {
+        "label": "Employee",
+        "kind": 6,
+        "importPath": "oops.task2",
+        "description": "oops.task2",
+        "peekOfCode": "class Employee:\n    def __init__(self,role,dept,salary):\n        self.role=role\n        self.dept=dept\n        self.salary=salary\n    def showDetail(self):\n        print(\"role=\",self.role)\n        print(\"dept=\",self.dept)\n        print(\"salary=\",self.salary)\ne1=Employee(\"SDE2\",\"jio\",\"9000000\")",
+        "detail": "oops.task2",
+        "documentation": {}
+    },
+    {
+        "label": "Engineer",
+        "kind": 6,
+        "importPath": "oops.task2",
+        "description": "oops.task2",
+        "peekOfCode": "class Engineer(Employee):\n    def __init__(self,age,name):\n        self.name=name\n        self.age=age\n        super().__init__(\"Engineer\",\"IT\",\"7,500,000\")\neng1=Engineer(\"kartik\",21)\neng1.showDetail()\nprint(\"-------TASK4--------\")\nclass Order:\n    def __init__(self,price,item):",
+        "detail": "oops.task2",
+        "documentation": {}
+    },
+    {
+        "label": "Order",
+        "kind": 6,
+        "importPath": "oops.task2",
+        "description": "oops.task2",
+        "peekOfCode": "class Order:\n    def __init__(self,price,item):\n        self.item=item\n        self.price=price\n    def __gt__(self,ordr2):\n        return self.price > ordr2.price\nordr1=Order(\"chips\",20)\nordr2=Order(\"coke\",40)\nprint(ordr1 > ordr2)",
+        "detail": "oops.task2",
         "documentation": {}
     },
     {

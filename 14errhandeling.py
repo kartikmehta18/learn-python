@@ -36,5 +36,6 @@ else :
     print(f.read())
     f.close()
 finally:
+     
     print("Executing finally...")
-    
+   
