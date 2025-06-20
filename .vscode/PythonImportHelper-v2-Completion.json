@@ -144,6 +144,14 @@
         "documentation": {}
     },
     {
+        "label": "addinfo",
+        "importPath": "urllib.response",
+        "description": "urllib.response",
+        "isExtraImport": true,
+        "detail": "urllib.response",
+        "documentation": {}
+    },
+    {
         "label": "hellow_func",
         "kind": 2,
         "importPath": "8functions.8functions",
@@ -544,7 +552,16 @@
         "kind": 2,
         "importPath": "12listcompher",
         "description": "12listcompher",
-        "peekOfCode": "def gen_func(nums):\n    for n in nums:\n       yield n*n\nmy_gen = gen_func(nums)\nfor i in my_gen:\n    print(i)\nmy_gen =(n*n for n in nums)",
+        "peekOfCode": "def gen_func(nums):\n    for n in nums:\n       yield n*n\nmy_gen = gen_func(nums)\nfor i in my_gen:\n    print(i)\nmy_gen =(n*n for n in nums)\nlism=[]\ndef lst_squa(lst):\n    for i in lst:",
+        "detail": "12listcompher",
+        "documentation": {}
+    },
+    {
+        "label": "lst_squa",
+        "kind": 2,
+        "importPath": "12listcompher",
+        "description": "12listcompher",
+        "peekOfCode": "def lst_squa(lst):\n    for i in lst:\n        lism.append(i*i)\n    return lism\nprint(lst_squa([1,2,3,45,6,7]))\n#LIST COMP\nlsst=[[1,2,3,45,6,7]]\nk=[i*i for i in lsst[0]]  # Access the first (and only) inner list\nprint(k)",
         "detail": "12listcompher",
         "documentation": {}
     },
@@ -580,7 +597,7 @@
         "kind": 5,
         "importPath": "12listcompher",
         "description": "12listcompher",
-        "peekOfCode": "my_gen = gen_func(nums)\nfor i in my_gen:\n    print(i)\nmy_gen =(n*n for n in nums)",
+        "peekOfCode": "my_gen = gen_func(nums)\nfor i in my_gen:\n    print(i)\nmy_gen =(n*n for n in nums)\nlism=[]\ndef lst_squa(lst):\n    for i in lst:\n        lism.append(i*i)\n    return lism\nprint(lst_squa([1,2,3,45,6,7]))",
         "detail": "12listcompher",
         "documentation": {}
     },
@@ -1050,6 +1067,24 @@
         "description": "agent",
         "peekOfCode": "client = OpenAI(api_key=os.getenv(\"OPENAI_API_KEY\"))\ndef ask_llm(prompt):\n    response = client.chat.completions.create(\n        model=\"gpt-3.5-turbo\",  # Or \"gpt-4\"\n        messages=[\n            {\"role\": \"user\", \"content\": prompt}\n        ],\n        temperature=0.7\n    )\n    return response.choices[0].message.content",
         "detail": "agent",
+        "documentation": {}
+    },
+    {
+        "label": "even_odd",
+        "kind": 2,
+        "importPath": "map",
+        "description": "map",
+        "peekOfCode": "def even_odd(num):\n    if num%2==0:\n        # print(num)\n        print(\"the {} is event\".format(num))\n    else:\n        print(\"the {} is odd\".format(num))\neven_odd(9)   \nlst =[1,2,3,4,5,6,734,56,34]\nlist(map(even_odd,lst))\n# lambda",
+        "detail": "map",
+        "documentation": {}
+    },
+    {
+        "label": "even",
+        "kind": 2,
+        "importPath": "map",
+        "description": "map",
+        "peekOfCode": "def even(num):                             \n    if num%2==0:\n        return True\nlst1 =[1,2,0,7,56,34]\nprint(list(filter(even,lst1)))\nkm=print(list(filter(lambda num:num%2==0,lst1)))\nprint(km)",
+        "detail": "map",
         "documentation": {}
     }
 ]

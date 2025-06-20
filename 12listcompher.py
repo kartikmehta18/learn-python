@@ -88,3 +88,17 @@ for i in my_gen:
     print(i)
 
 my_gen =(n*n for n in nums)
+
+lism=[]
+def lst_squa(lst):
+    for i in lst:
+        lism.append(i*i)
+    return lism
+
+
+print(lst_squa([1,2,3,45,6,7]))
+
+#LIST COMP
+lsst=[[1,2,3,45,6,7]]
+k=[i*i for i in lsst[0]]  # Access the first (and only) inner list
+print(k)
