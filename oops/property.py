@@ -3,8 +3,9 @@ class Student:
         self.phy=phy
         self.chem=chem
         self.maths=maths
-        # self.percentage=str((self.phy + self.chem +self.maths )/3) + "%"
-        
+        # self.percentage=str((self.phy + self.chem +self.maths )/3) + "%" #when i do this % not updated
+       
+       #its update 
     @property
     def percentage(self):
         return str((self.phy + self.chem +self.maths )/3) + "%"

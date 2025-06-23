@@ -453,7 +453,7 @@
         "kind": 6,
         "importPath": "oops.property",
         "description": "oops.property",
-        "peekOfCode": "class Student:\n    def __init__(self,phy,chem,maths):\n        self.phy=phy\n        self.chem=chem\n        self.maths=maths\n        # self.percentage=str((self.phy + self.chem +self.maths )/3) + \"%\"\n    @property\n    def percentage(self):\n        return str((self.phy + self.chem +self.maths )/3) + \"%\"\nst1=Student(67,78,89)",
+        "peekOfCode": "class Student:\n    def __init__(self,phy,chem,maths):\n        self.phy=phy\n        self.chem=chem\n        self.maths=maths\n        # self.percentage=str((self.phy + self.chem +self.maths )/3) + \"%\" #when i do this % not updated\n       #its update \n    @property\n    def percentage(self):\n        return str((self.phy + self.chem +self.maths )/3) + \"%\"",
         "detail": "oops.property",
         "documentation": {}
     },

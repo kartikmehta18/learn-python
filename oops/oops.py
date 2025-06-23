@@ -19,7 +19,6 @@ class Student:
     def get_marks(self):
         return self.cgpa
     
-
 # s1= Student("kartik",9)
 # print(s1.name,s1.cgpa)
 
